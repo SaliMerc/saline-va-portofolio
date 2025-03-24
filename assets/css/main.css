@@ -20,21 +20,21 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #f3ecdc; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #411e16; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #411e16; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #f3ecdc; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #f3ecdc; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #444444;  /* The default color of the main navmenu links */
   --nav-hover-color: #411E16; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #f3ecdc; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #34b7a7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #411e16; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -46,7 +46,7 @@
 
 .dark-background {
   --background-color: #f3ecdc;
-  --default-color: #ffffff;
+  --default-color: #f3ecdc;
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
@@ -330,7 +330,7 @@ h6 {
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
+    /*opacity:;*/
     top: 0;
     left: -100%;
     visibility: visible;
@@ -1084,7 +1084,11 @@ section,
 }
 
 .services .service-item.item-cyan i {
-  color: #0dcaf0;
+  /*color: #411e16;*/
+  background: linear-gradient(to left, #4285f4, #34A853, #FBBC05,#ea4335);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 .services .service-item.item-cyan:hover .icon i {
@@ -1092,11 +1096,14 @@ section,
 }
 
 .services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
+  fill: #411e16;
 }
 
 .services .service-item.item-orange i {
-  color: #fd7e14;
+  background: linear-gradient(to right, #20c997, #fd7e14);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 .services .service-item.item-orange:hover .icon i {
@@ -1120,7 +1127,19 @@ section,
 }
 
 .services .service-item.item-red i {
-  color: #df1529;
+    background: linear-gradient(
+    135deg,
+    #F25022 25%,  /* Red */
+    #7FBA00 25%,  /* Green */
+    #7FBA00 50%,
+    #00A4EF 50%,  /* Blue */
+    #00A4EF 75%,
+    #FFB900 75%   /* Yellow */
+  );
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+  /*color: #df1529;*/
 }
 
 .services .service-item.item-red:hover .icon i {
