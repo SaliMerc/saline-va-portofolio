@@ -722,13 +722,13 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 25px;
   color: var(--heading-color);
 }
 
@@ -766,9 +766,12 @@ section,
 --------------------------------------------------------------*/
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2rem;
 }
-
+.about .content {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
